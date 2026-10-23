@@ -52,10 +52,10 @@ v24.22.1
 |                                         |sí es propietario.           |                        |
 |                                         |                             |                        |
 | Licencia / empresa o comunidad          |Servicio de GitHub, propiedad|Licencia BSD de 3 
-                                                                         cláusulas.Lo desarrolla 
+                                           de Microsoft y el editor      cláusulas.Lo desarrolla 
                                                                          la comunidad bajo 
                                                                          Project Jupyter.        |
-|                                         |de Microsoft y el editor     |            |
+|                                         |    |            |
 |                                         |base usa licencia MIT.       |            |
 | ¿Tiene coste? ¿Con qué límites?         |                             |            |
 | ¿Se puede usar fuera de GitHub?         |                             |            |
