@@ -17,9 +17,11 @@ Resultado de `java -version` y `node -v` **antes** de instalar nada:
 
 ```
 pega aquí
+bash: java: command not found
+bash: node: command not found
 ```
 
-¿Por qué crees que aparece ese mensaje? (relaciónalo con la diapositiva «Problemas habituales del entorno»)
+¿Por qué crees que aparece ese mensaje? porque todavia no hay java ni node en este entorno, instalarlos es justo el siguiente paso (relaciónalo con la diapositiva «Problemas habituales del entorno»)
 
 > 
 
@@ -29,18 +31,32 @@ Resultado de `java -version`, `node -v` y `jupyter lab --version` **después**:
 
 ```
 pega aquí
+openjdk version "27" 2026-09-15
+OpenJDK Runtime Environment Temurin-27+35 (build 27+35)
+OpenJDK 64-Bit Server VM Temurin-27+35 (build 27+35, mixed mode, sharing)
+v24.22.1
 ```
 
-¿Qué líneas nuevas han aparecido en `devcontainer.json`? Explica con tus palabras qué hace cada una:
+¿Qué líneas nuevas han aparecido en `devcontainer.json`? Explica con tus palabras qué hace cada una: se añadio la fila de pyton porque antes solo estaban java y node, cada linea supongo que define la version de cada uno porque aparecia una opcion de actualizar la version de node y al aceptarlo, esa linea cambiaba de 2 a 2.1.1
 
 > 
 
 ### 1.3. Comparativa de los dos IDE (paso 6)
 
-|                                         | Editor de GitHub Codespaces | JupyterLab |
-|-----------------------------------------|-----------------------------|------------|
-| ¿Libre o propietario?                   |                             |            |
-| Licencia / empresa o comunidad          |                             |            |
+|                                         | Editor de GitHub Codespaces | JupyterLab             |
+|-----------------------------------------|-----------------------------|------------------------|
+| ¿Libre o propietario?                   |Parcialmente libre. El editor|Libre                   |
+|                                         |es una versión web de VS Code|                        | 
+|                                         |de código abierto, pero      |                        |
+|                                         |el servicio Codespaces en    |                        |
+|                                         |sí es propietario.           |                        |
+|                                         |                             |                        |
+| Licencia / empresa o comunidad          |Servicio de GitHub, propiedad|Licencia BSD de 3 
+                                                                         cláusulas.Lo desarrolla 
+                                                                         la comunidad bajo 
+                                                                         Project Jupyter.        |
+|                                         |de Microsoft y el editor     |            |
+|                                         |base usa licencia MIT.       |            |
 | ¿Tiene coste? ¿Con qué límites?         |                             |            |
 | ¿Se puede usar fuera de GitHub?         |                             |            |
 | Lo que más me ha gustado                |                             |            |
@@ -144,6 +160,9 @@ pega aquí
 ## 6. Incidencias
 
 Anota cualquier problema que hayas tenido y cómo lo resolviste (también si usaste un fragmento completo).
+----
+En el paso 4, al momento de querer abrir el codespace me aparecia: El comando "Codespaces: Add Dev Container Configuration Files..." ha dado lugar a un error
+command 'github.codespaces.configureDevContainerCommand' not found, le pregunte a claude que significaba ese error y me dijo que desde el navegador de Safari a veces las extensiones no cargan del todo, por lo que use el fragmento completo del apartado fragmentos/paso-04-devcontainer.json,
 
 > 
 
